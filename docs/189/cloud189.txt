@@ -1,0 +1,23 @@
+https://cloud.189.cn/v2/listShareDir.action?shareId=3875999&verifyCode=450751&orderBy=1&order=ASC&pageNum=1&pageSize=60&noCache=0.5059168446618272
+
+https://cloud.189.cn/v2/listShareDir.action?
+shareId=3875999&
+verifyCode=450751&
+orderBy=1&
+order=ASC&
+pageNum=1&
+pageSize=60&
+noCache=0.5059168446618272
+
+https://cloud.189.cn/v2/listShareDir.action?shareId=3875999&accessCode=4507&verifyCode=450751&orderBy=1&order=ASC&pageNum=1&pageSize=60&noCache=0.47236528610027606
+
+downloadUrl: "//cloud.189.cn/downloadFile.action?fileStr=A7C70DE451749DD9F4FCA8BE96B52AE2A3E6637EB1251B2742F81E6E72C12DBF5926217E667E5212EDFDB22C912E775051BE64D04E51D3B2&downloadType=3&shareId=3875999"
+
+https://cloud.189.cn/downloadFile.action?fileStr=A7C70DE451749DD9F4FCA8BE96B52AE2A3E6637EB1251B2742F81E6E72C12DBF5926217E667E5212EDFDB22C912E775051BE64D04E51D3B2&downloadType=3&shareId=3875999
+
+
+
+  ssl_certificate /usr/local/etc/letsencrypt/live/yikeo.com/fullchain.pem;
+        ssl_certificate_key /usr/local/etc/letsencrypt/live/yikeo.com/privkey.pem;
+
+return 301 https://$server_name$request_uri;

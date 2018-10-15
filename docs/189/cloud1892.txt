@@ -1,0 +1,42 @@
+[{"id":"0","pId":"-11","name":"同步盘","isParent":"true"},{"id":"-12","pId":"-11","name":"我的图片","isParent":"true"},{"id":"-14","pId":"-11","name":"我的音乐","isParent":"true"},{"id":"-13","pId":"-11","name":"我的视频","isParent":"true"},{"id":"-15","pId":"-11","name":"我的文档","isParent":"true"},{"id":"-16","pId":"-11","name":"我的应用","isParent":"true"},{"id":"8130532268712345","pId":"-11","name":"伊客书屋","isParent":"true"},{"id":"315501834321718","pId":"-11","name":"转存的文件","isParent":"true"}]
+
+
+创建文件夹
+https://cloud.189.cn/v2/createFolder.action?parentId=315501834321718&fileName=%E7%B4%A0%E6%8F%8F%E8%BD%BB%E6%9D%BE%E5%AD%A6&noCache=0.913972534838859
+{"fileId":"8130532268712346","isNew":true}
+
+转存：
+https://cloud.189.cn/createBatchTask.action
+
+type: SHARE_SAVE
+taskInfos: [
+{"fileId":"9134022236783593","fileName":"素描轻松学.azw3","isFolder":0,"srcParentId":"9147212236711071"},
+{"fileId":"4149022222692468","fileName":"素描轻松学.epub","isFolder":0,"srcParentId":"9147212236711071"},
+{"fileId":"3149122224693439","fileName":"素描轻松学.mobi","isFolder":0,"srcParentId":"9147212236711071"}]
+targetFolderId: 8130532268712346
+noCache: 0.49722141806646003
+shareId: 3848304
+
+"201810151735348711"
+
+https://cloud.189.cn/checkBatchTask.action
+taskId: 201810151735348711
+type: SHARE_SAVE
+noCache: 0.15932945529209985
+
+taskId: 201810151735348711
+type: SHARE_SAVE
+noCache: 0.23606843700218105
+
+获取文件列表
+https://cloud.189.cn/v2/listShareDir.action?shareId=3848304&accessCode=5244&verifyCode=524416&orderBy=1&order=ASC&pageNum=1&pageSize=60&noCache=0.8940381812027145
+
+{
+	"accessCount":{"copyCount":231,"downloadCount":448,"previewCount":877},
+	"creatorVO":{"domainName":"442030679","icon":"","nickname":"15889****47@189.cn","vip":0},
+	"data":[
+		{"createTime":"2018-09-13 20:05:45","digest":"75FA711F479742E87B6835E9AEF0ECBAABD9AC15DA56F8FDEDB7F855","downloadUrl":"\/\/cloud.189.cn\/downloadFile.action?fileStr=E99009C6E25D5F96425B04412B4035F6A3F58CAFB854A3350748271233AC47B6383DA17265F16662FDA63B4541385E37E8A1733BD3493DC7&downloadType=3&shareId=3848304","fileId":"9134022236783593","fileIdDigest":"AA54D477B6BC00B97B34D0F44B74B18B313B800997C856681410B9563B3A6B34361393DE226D868669074C2AD829AE42D87FD957","fileName":"素描轻松学.azw3","fileSize":37171317,"fileType":"azw3","isFolder":false,"lastOpTime":"2018-09-13 20:05:45","mediaType":0,"parentId":"9147212236711071"},
+		{"createTime":"2018-09-13 20:07:55","digest":"4A457A59951CDA3E4419F8D5EDEB691EDE09774885CCD9D4F89917C4","downloadUrl":"\/\/cloud.189.cn\/downloadFile.action?fileStr=FE5D7C42976B5B7772CF535CB3856A62C42653E73018665FA1945EA8A497FC4BE9ABCF8FAB219B87B459B2A91BA6D839023CF4DACBA1E82D&downloadType=3&shareId=3848304","fileId":"4149022222692468","fileIdDigest":"F295FBBB0550CD132F4854B49FDC48EAA200D543DDD57EA0FFCCA3BCDB253D9BE518F363630408C86223DFF9F9C0A16B8CBFEC73","fileName":"素描轻松学.epub","fileSize":33977212,"fileType":"epub","isFolder":false,"lastOpTime":"2018-09-13 20:07:55","mediaType":0,"parentId":"9147212236711071"},
+		{"createTime":"2018-09-13 20:10:19","digest":"A53D40C829D497F384FE665516E26DCB0DB90D6A532DB9A41E752952","downloadUrl":"\/\/cloud.189.cn\/downloadFile.action?fileStr=3189A99F50A2B25214DC568CCCD949B2BC47EC601AA0510D91BE5FA3412AC9932BC0C2E489BCB7825ACD6FB9BE7068060E536CE12C3C20A5&downloadType=3&shareId=3848304","fileId":"3149122224693439","fileIdDigest":"A47963E0000A8A8CD30D05BDBBF9074F155DB5F846C37ED4A862AE46EAB33D469F34FD84B92B7AB2C995E011BAB22F49A51DEABF","fileName":"素描轻松学.mobi","fileSize":37259436,"fileType":"mobi","isFolder":false,"lastOpTime":"2018-09-13 20:10:19","mediaType":0,"parentId":"9147212236711071"}],"digest":"CC3AA55B07DC521AF1E364ADE469089B7F77A3FABC7791309398E49F","pageNum":1,"pageSize":60,"path":[{"fileId":"9147212236711071","fileName":"素描轻松学"}
+	],
+	"recordCount":3,"shareDate":"2018-09-13 20:05:15"}
